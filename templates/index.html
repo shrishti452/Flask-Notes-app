@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Notes App</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>📝 Notes App</h2>
+
+<div class="input-area">
+<input id="noteInput" placeholder="Write a note...">
+<button onclick="addNote()">Add</button>
+</div>
+
+<ul id="notesList"></ul>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
